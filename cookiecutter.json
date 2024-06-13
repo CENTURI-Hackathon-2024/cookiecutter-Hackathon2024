@@ -1,0 +1,27 @@
+{
+    "full_name": "Your Name",
+    "email": "leo.guignard@univ-amu.fr",
+    "github_username_or_organization": "CENTURI-hackathon-2024",
+    "library_name": "test_Foo-Bar",
+    "module_name": "{{ cookiecutter.library_name|lower|replace('-', '_') }}",
+    "class_name": "{{cookiecutter.library_name|replace('-', '')|replace('_', '')}}",
+    "display_name": "{{ cookiecutter.library_name }}",
+    "github_repository_url": ["https://github.com/{{cookiecutter.github_username_or_organization}}/{{cookiecutter.library_name}}", "provide later"],
+    "test_notebook": "y",
+    "version_numbering": "y",
+    "dependency_prefil": "y",
+    "numpy": "{{cookiecutter.dependency_prefil}}",
+    "scipy": "{{cookiecutter.dependency_prefil}}",
+    "scikit_image": "{{cookiecutter.dependency_prefil}}",
+    "scikit_learn": "{{cookiecutter.dependency_prefil}}",
+    "napari": "{{cookiecutter.dependency_prefil}}",
+    "short_description": "A repository to analyse data",
+    "license": [
+        "MIT",
+        "BSD-3",
+        "Mozilla Public License 2.0",
+        "Apache Software License 2.0",
+        "GNU LGPL v3.0",
+        "GNU GPL v3.0"
+    ]
+}
