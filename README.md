@@ -1,4 +1,4 @@
-# A [Cookiecutter] template for members of the [Guignard Lab] and maybe others (?)
+# A [Cookiecutter] template for the projects of the [CENTURI-Hackathon-2024] and maybe others (?)
 
 ----------------------------------
 
@@ -8,7 +8,8 @@ It includes config files, tests structure and version control.
 ## Folder structure:
 
 When creating a project, the folder structure is the following (assuming that you are creating a module named FooBar):
-```
+
+```shell
 FooBar # Folder with the project
 ├── LICENSE                         # License file
 ├── MANIFEST.in                     # Manifest file (for including and excluding when building)
@@ -38,20 +39,25 @@ This format can of course be modified if necessary but it is a decent basis to s
 
 1. It is necessary to first install [Cookiecutter]:
 
-```
+```shell
 pip install cookiecutter
 ```
+
 or
-```
+
+```shell
 conda install cookiecutter
 ```
 
-2. Then, one can run:
-```
+1. Then, one can run:
+
+```shell
 cookiecutter gh:guignardlab/cookiecutter-guignardlab
 ```
+
 or
-```
+
+```shell
 cookiecutter https://github.com/guignardlab/cookiecutter-guignardlab
 ```
 
@@ -60,22 +66,26 @@ cookiecutter https://github.com/guignardlab/cookiecutter-guignardlab
 When starting a new project/module, one can setup the folder tree using [Cookiecutter].
 
 It can be done the following way:
-```
+
+```shell
 cookiecutter gh:guignardlab/cookiecutter-guignardlab
 ```
 
 or by:
+
 1. cloning this repository:
-```
+
+```shell
 git clone https://github.com/guignardlab/cookiecutter-guignardlab
 ```
 
-2. calling cookiecutter with the cloned repository:
-```
+1. calling cookiecutter with the cloned repository:
+
+```shell
 cookiecutter cookiecutter-guignardlab
 ```
 
-3. Once ran, the command will prompt the user with few questions (the bracket is the automatic answer when nothing is given):
+1. Once ran, the command will prompt the user with few questions (the bracket is the automatic answer when nothing is given):
     - `full_name [Your Name]:` -> Inform your name
     - `email [your.name@univ-amu.fr]:` -> Inform your email
     - `github_username_or_organization [GuignardLab]:` -> inform to which account the repository should be saved in (it could be your personal account too for example)
@@ -85,7 +95,7 @@ cookiecutter cookiecutter-guignardlab
     - `display_name [test_Foo-Bar]:` -> Name to display in the README etc
     - 
             Select github_repository_url:
-            1 - https://github.com/GuignardLab/test_Foo-Bar
+            1 - https://github.com/CENTURI-Hackathon-2024/test_Foo-Bar
             2 - provide later
             Choose from 1, 2 [1]:
       -> choose the address to the github repository
@@ -110,13 +120,10 @@ cookiecutter cookiecutter-guignardlab
             6 - GNU GPL v3.0
             Choose from 1, 2, 3, 4, 5, 6 [1]:
       -> Type of license to use
-    - `M1_processor [n]:` -> whether or not to include numpy in the build (because of the Apple Silicon M1 processor problem)
 
 
-[Guignard Lab]: https://www.guignardlab.com
-[napari]: https://github.com/napari/napari
+[CENTURI-Hackathon-2024]: https://github.com/CENTURI-Hackathon-2024
 [Cookiecutter]: https://github.com/audreyr/cookiecutter
-[@napari]: https://github.com/napari
 [MIT]: http://opensource.org/licenses/MIT
 [BSD-3]: http://opensource.org/licenses/BSD-3-Clause
 [GNU GPL v3.0]: http://www.gnu.org/licenses/gpl-3.0.txt
@@ -124,10 +131,3 @@ cookiecutter cookiecutter-guignardlab
 [Apache Software License 2.0]: http://www.apache.org/licenses/LICENSE-2.0
 [Mozilla Public License 2.0]: https://www.mozilla.org/media/MPL/2.0/index.txt
 [cookiecutter-napari-plugin]: https://github.com/napari/cookiecutter-napari-plugin
-
-[file an issue]: https://github.com/leoguignard/napari-boids/issues
-
-[napari]: https://github.com/napari/napari
-[tox]: https://tox.readthedocs.io/en/latest/
-[pip]: https://pypi.org/project/pip/
-[PyPI]: https://pypi.org/
