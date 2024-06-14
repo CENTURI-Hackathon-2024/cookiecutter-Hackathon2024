@@ -27,9 +27,6 @@ FooBar # Folder with the project
 │            ├── __init__.py                    # init file for the tests
 │            └── test_module.py                 # test file
 ├── tox.ini                         # test config file
-├── .github                         # github config file
-│    └── workflows                      # workflow folder
-│        └── test_and_deploy.yml            # workflow config file
 └── .gitignore                      # ignored filed by git
 ```
 
